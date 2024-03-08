@@ -40,7 +40,7 @@ Here are some of the most popular castles.
 
 ## ERD
 
-<img width="930" alt="Screenshot 2024-03-08 at 1 35 51 PM" src="https://github.com/Zekkune/living-the-dream/assets/139939637/12809716-c2ca-4a51-8187-cc9209f569aa">
+<img width="856" alt="Screenshot 2024-03-08 at 1 48 40 PM" src="https://github.com/Zekkune/living-the-dream/assets/139939637/3ac52795-d3b8-4ab6-8b85-6937d5a501b2">
 
 
 ## Stretch Goals
