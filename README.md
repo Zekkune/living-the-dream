@@ -1,6 +1,6 @@
 # Living The Dream
 
-![This is the intro picture](<Intro.svg>)
+![This is the intro picture](images/Intro.svg)
 
 Living The Dream is an app designed to help you relive your childhood fantasies. Remember growing up thinking I wish I could live in Belle's castle or in the Batcave or anyother castle from a movie/cartoon you loved watching? Well look no further. With our app, you'll be able to rent out any catsle of your dream for the duration of time that you want. Make your dreams come true and celebrate your next birthday, family reunion or staff retreat at one of our castles. 
 
