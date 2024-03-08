@@ -14,25 +14,25 @@ We want to make an app that is user friendly and easy to use. An app that will a
 
 ## Wire Frame 
 Our landing page will welcome you into our fantasy world. 
-![This is the wireframe](<Wireframe 1.svg>)
+![This is the wireframe](<images/Wireframe 1.svg>)
 
 A dropdown menu will allow users to select between different categories and access the team's favorite castles. 
-![This is the wireframe](<Wireframe 2.svg>)
+![This is the wireframe](<images/Wireframe 2.svg>)
 
 Users will be able to see ratings, pictures and available dates of each proprety.
-![This is the wireframe](<Wireframe 3.svg>)
+![This is the wireframe](<images/Wireframe 3.svg>)
 
 Users can select the castle they wish to rent and reserve it 
-![This is the wireframe](<Wireframe 4.svg>)
+![This is the wireframe](<images/Wireframe 4.svg>)
 
 Here, users can see some of the team's favorite castle and why they love it so much
-![This is the wireframe](<Wireframe 5.svg>)
+![This is the wireframe](<images/Wireframe 5.svg>)
 
 This is a display of all the castles available on our app
-![This is the wireframe](<Wireframe 6.svg>)
+![This is the wireframe](<images/Wireframe 6.svg>)
 
 Here are some of the most popular castles. 
-![This is the wireframe](<Wireframe 7.svg>)
+![This is the wireframe](<images/Wireframe 7.svg>)
 
 
 ## Component Hierarchy Diagram
