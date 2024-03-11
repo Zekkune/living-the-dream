@@ -37,10 +37,11 @@ Here are some of the most popular castles.
 
 ## Component Hierarchy Diagram
 
+![This is our Components Diagram.](<images/Components Diagram.jpg>)
 
 ## ERD
 
-<img width="930" alt="Screenshot 2024-03-08 at 1 35 51 PM" src="https://github.com/Zekkune/living-the-dream/assets/139939637/12809716-c2ca-4a51-8187-cc9209f569aa">
+![This is our ERD](images/ERD.png)
 
 
 ## Stretch Goals
