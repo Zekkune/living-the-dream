@@ -1,13 +1,17 @@
 import { useState } from 'react'
+import './App.css'
+import Home from './components/Home'
+import Footer from './components/Footer'
 import { Route , Routes } from 'react-router-dom'
 import './App.css'
 import Header from './Components/Header'
 
-
-function App() {
-  const [count, setCount] = useState(0)
-
+const App = () => {
   return (
+    <div>
+      <HomePage />
+      <Footer />
+    </div>
     <>
     <Header />
     <Routes>
