@@ -1,0 +1,15 @@
+{
+  "name": "living-the-dream",
+  "version": "1.0.0",
+  "description": "![This is the intro picture](images/Intro.svg)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mongoose": "^8.2.1"
+  }
+}
