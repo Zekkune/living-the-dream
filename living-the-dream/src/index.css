@@ -3,24 +3,46 @@ body {
   background: linear-gradient(to right, #8c52ff, #5ce1e6);
 }
 
-#logo {
-  height: 70px;
-  float: left;
-}
 
 .NavBar {
-  font-family: "Bad Script", cursive;
+  font-family:  "Babylonica", cursive;
   font-size: 33px;
   text-align: center;
   padding: 10px;
   margin-top: 0;
-  border-top: 2px solid black;
   border-bottom: 2px solid black;
   display: inline;
-  
 }
 
-/* .NavBar:hover {
+#logo {
+  height: 70px;
+  float: left;
+}
+#navItem1 {
+  color: black;
+  display: inline;
+  text-decoration: none;
+  padding: 30px;
+  text-align: left;
+}
+
+#navItem {
+  color: black;
+  display: inline;
+  text-decoration: none;
+  padding: 30px;
+}
+
+#navItem:hover{
   background-color: black;
   color: goldenrod;
-} */
+  
+} 
+
+#searchBar{
+  margin: 40px;
+  border-radius: 50px;
+  width: 500px;
+  height: 50px;
+  text-align: center;
+}
