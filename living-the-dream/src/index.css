@@ -3,6 +3,11 @@ body {
   background: linear-gradient(to right, #8c52ff, #5ce1e6);
 }
 
+#logo {
+  height: 70px;
+  float: left;
+}
+
 .NavBar {
   font-family: "Bad Script", cursive;
   font-size: 33px;
@@ -11,9 +16,11 @@ body {
   margin-top: 0;
   border-top: 2px solid black;
   border-bottom: 2px solid black;
-
+  display: inline;
+  
 }
-.NavBar:hover {
+
+/* .NavBar:hover {
   background-color: black;
   color: goldenrod;
-}
+} */

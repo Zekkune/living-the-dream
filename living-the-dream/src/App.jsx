@@ -1,27 +1,30 @@
 import { useState } from 'react'
-import './App.css'
-import Home from './components/Home'
-import Footer from './components/Footer'
 import { Route , Routes } from 'react-router-dom'
+
 import './App.css'
 import Header from './Components/Header'
+//import Home from './Components/Home'
+import Categories from './Components/Categories'
+import TeamDream from './Components/TeamDream'
+import SurpriseMe from './Components/SurpriseMe'
+import MostPopular from './Components/MostPopular'
+// import Footer from './Components/Footer'
+
 
 const App = () => {
   return (
-    <div>
-      <HomePage />
-      <Footer />
-    </div>
-    <>
+    
+    <div className= "app">
     <Header />
     <Routes>
-      <Route path= '/' element={<Home />}/>
+      {/* <Route path= '/' element={<Home />}/> */}
       <Route path= '/Categories' element={<Categories/>}/>
       <Route path= '/TeamDream' element={<TeamDream />}/>
-      <Route path= '/SurpriseMer' element={<SurpriseMe/>}/>
+      <Route path= '/SurpriseMe' element={<SurpriseMe/>}/>
       <Route path= '/MostPopular' element={<MostPopular/>}/>
     </Routes>
-    </>
+    {/* <Footer /> */}
+  </div>
   )
 }
 
