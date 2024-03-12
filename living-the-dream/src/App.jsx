@@ -1,33 +1,35 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import Categories from './Components/Categories'
+import DisneyCategory from './Components/DisneyCategory'
+import MarvelCategory from './Components/MarvelCategory'
+import LotrCategory from './Components/LotrCategory'
+import HorrorCategory from './Components/HorrorCategory'
+import Home from './Components/Home'
+import Footer from './Components/Footer'
+import { Route , Routes } from 'react-router-dom'
+import './App.css'
+import Header from './Components/Header'
 
-function App() {
-  const [count, setCount] = useState(0)
-
+const App = () => {
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+    <Header />
+    <Routes>
+      <Route path= '/' element={<Home />}/>
+      <Route path= '/Categories' element={<Categories/>}/>
+      <Route path= '/TeamDream' element={<TeamDream />}/>
+      <Route path= '/SurpriseMer' element={<SurpriseMe/>}/>
+      <Route path= '/MostPopular' element={<MostPopular/>}/>
+      <Route path="/" exact component={Categories} />
+      <Route path="/categories/disney" component={DisneyCategory} />
+      <Route path="/categories/marvel" component={MarvelCategory} />
+      <Route path="/categories/lotr" component={LotrCategory} />
+      <Route path="/categories/horror" component={HorrorCategory} />
+    </Routes>
+    <Home />
+    <Footer />
     </>
   )
 }
