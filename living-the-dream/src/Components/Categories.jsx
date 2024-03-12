@@ -15,11 +15,7 @@ function Categories() {
       <option value="Option 2">Marvel</option> 
       <option value="Option 3">Lord of The Rings</option> 
       <option value="Option 4">Horror</option>
-    </select>
-        {/* <li><Link to="/categories/disney">Disney</Link></li>
-        <li><Link to="/categories/disney">Marvel</Link></li>
-        <li><Link to="/categories/lotr">Lord of the Rings</Link></li>
-        <li><Link to="/categories/horror">Horror</Link></li> */}
+      </select>
     </div>
   )
 }
