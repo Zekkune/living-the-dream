@@ -8,7 +8,7 @@ export default function SearchBar () {
     return (
         <div className= "searchBar"> 
         
-        <input type= "text" placeholder="Search Here"></input>
+        <input type= "text" placeholder="Search Here" id='searchBar'></input>
         {/* <input type= "text" placeholder="Search Here" onChange={handleChange} value={searchInput}></input> */}
 
         </div>
