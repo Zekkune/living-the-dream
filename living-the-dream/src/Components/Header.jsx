@@ -5,5 +5,5 @@ export default function Header () {
 
     return (
         <div className= 'Header'>
-<h2> I am the header</h2>
-<Na
+        <h2> I am the header</h2>
+        </div>)}
