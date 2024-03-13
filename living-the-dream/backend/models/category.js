@@ -7,7 +7,7 @@ const Listing = require('./listing')
 const Category = new Schema(
 {
     name : {type: String, required: true},
-    listing : {type: mongoose.Schema.Types.ObjectId, required: true, ref: './listing'}
+    listings: [{ type: String, ref: 'Listing' }]
 },
 {timestamps: true} )
 
