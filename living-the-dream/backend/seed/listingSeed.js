@@ -1,10 +1,13 @@
 const db = require('../db');
-const { Category, Listing } = require('../models');
+const Category = require('../models/category')
+const Listing = require('../models/listing')
 
 db.on('error', console.error.bind(console, 'MongoDB connection error:'));
 
 const main = async () => {
     try {
+        await Listing.deleteMany({})
+        
         // Fetch categories
         const categories = await Category.find({});
 
@@ -14,7 +17,7 @@ const main = async () => {
                 case 'Disney':
                     await createDisneyListings(category);
                     break;
-                case 'Marval':
+                case 'Marvel':
                     await createMarvelListings(category);
                     break;
                 case 'Horror':
@@ -22,7 +25,7 @@ const main = async () => {
                     break;
                 case 'Lord of Rings':
                     await createLOTRListings(category);
-                    break;list
+                    break;
                 default:
                     console.error(`Unknown category: ${category.name}`);
                     break;
@@ -33,9 +36,11 @@ const main = async () => {
     } catch (error) {
         console.error('Error seeding listings:', error);
     } finally {
+        // Update the Horror category with its listings
         db.close();
     }
 };
+
 
 const createDisneyListings = async (category) => {
     await Listing.create([
@@ -140,7 +145,7 @@ const createDisneyListings = async (category) => {
     console.log('Disney listings seeded successfully');
 };
 
-const createMarvalListings = async (category) => {
+const createMarvelListings = async (category) => {
     await Listing.create([
         {
             listing_id: 'marvel001',
@@ -447,7 +452,7 @@ const createLOTRListings = async (category) => {
         }
     ]);
 
-    console.log('Lord of Rings listings seeded successfully');
+    console.log('Lord of Rings listings seeded successfully')
 };
 
 main();
