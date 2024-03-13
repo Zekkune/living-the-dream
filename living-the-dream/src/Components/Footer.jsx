@@ -5,7 +5,10 @@ const Footer = () => {
     <footer>
       <p>&copy; 2024 Living the Dream. All rights reserved.</p>
       <p>Privacy Policy | Terms of Use | Careers | Contact Us</p>
-      <p>Ameyzin04   jiamliu    wilmckay    Zekkune</p>
+      <a href >Ameyzin04 </a>  
+      <a href >jiamliu </a>
+      <a href="https://github.com/wilmckay">wilmckay </a> 
+      <a href="https://github.com/Zekkune">Zekkune </a>
     </footer>
   )
 }

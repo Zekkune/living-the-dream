@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { useState } from 'react'
+import axios from 'axios'
 
 function Categories() {
   const [selectedValue, setSelectedValue] = useState(option1)
@@ -19,5 +20,19 @@ function Categories() {
     </div>
   )
 }
+
+
+// function fetchCategories() {
+//   const apiUrl = 
+
+//   return axios.get(apiUrl)
+//     .then(response => {
+//       return response.data
+//     })
+//     .catch(error => {
+//       console.error('Error fetching categories:', error)
+//       throw error;
+//     });
+// }
 
 export default Categories
