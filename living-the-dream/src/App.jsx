@@ -11,7 +11,18 @@ import MostPopular from './Components/MostPopular'
 // import SearchBar from './Components/SearchBar'
 import Enchanted from './Components/Enchanted'
 
-const App = () => {
+
+  export default function App() {
+    // const [post, setPost] = useState(null);
+  
+    // useEffect(() => {
+    //   axios.get(baseURL).then((response) => {
+    //     setPost(response.data);
+    //   });
+    // }, []);
+  
+    // if (!post) return null;
+  
   return (
     <>
     <Header />
@@ -27,5 +38,3 @@ const App = () => {
     </>
   )
 }
-
-export default App
