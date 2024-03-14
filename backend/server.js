@@ -42,6 +42,7 @@ app.get('/listings', async (req, res) => {
 app.get('/listings/:categoryId', async (req, res) => {
   try {
     const listings = await Listing.find({category: req.params.categoryId});
+    console.log(listings)
     res.json(listings);
   } catch (error) {
     res.status(404).json({ message: 'Listings not found' });

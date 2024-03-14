@@ -19,6 +19,9 @@ function Categories() {
     <div>
       <h2>Categories</h2>
       <h3><Link to='/listings/65f0f0d919b654825ff31c38'>Disney List</Link></h3>
+      <h3><Link to='/listings/65f0f0d919b654825ff31c39'>Marvel List</Link></h3>
+      <h3><Link to='/listings/65f0f0d919b654825ff31c3b'>LOTR List</Link></h3>
+      <h3><Link to='/listings/65f0f0d919b654825ff31c3a'>Horror List</Link></h3>
     </div>
   )
 }
