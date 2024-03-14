@@ -1,20 +1,15 @@
-import { useState , useEffect } from 'react'
-import { Route , Routes } from 'react-router-dom'
-
-import Header from './Components/Header'
-import Home from './Components/Home'
-import Categories from './Components/Categories'
-import DisneyCategory from './Components/DisneyCategory'
-import MarvelCategory from './Components/MarvelCategory'
-import LotrCategory from './Components/LotrCategory'
-import HorrorCategory from './Components/HorrorCategory'
+import { useState } from 'react'
+import './App.css'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import Home from './Components/Home'
 import Footer from './Components/Footer'
-
-import './App.css'
-import axios from 'axios'
-
-const BASE_URL = 'mongodb://127.0.0.1:27017/dreamDatabase'
+import Header from './Components/Header'
+import TeamDream from './Components/TeamDream'
+import Categories from './Components/Categories'
+import SurpriseMe from './Components/SurpriseMe'
+import MostPopular from './Components/MostPopular'
+// import SearchBar from './Components/SearchBar'
+import Enchanted from './Components/Enchanted'
 
 
   export default function App() {
@@ -37,11 +32,7 @@ const BASE_URL = 'mongodb://127.0.0.1:27017/dreamDatabase'
       <Route path= '/TeamDream' element={<TeamDream />}/>
       <Route path= '/SurpriseMe' element={<SurpriseMe/>}/>
       <Route path= '/MostPopular' element={<MostPopular/>}/>
-      <Route path="/" exact component={Categories} />
-      <Route path="/categories/disney" component={DisneyCategory} />
-      <Route path="/categories/marvel" component={MarvelCategory} />
-      <Route path="/categories/lotr" component={LotrCategory} />
-      <Route path="/categories/horror" component={HorrorCategory} />
+      <Route path= '/listings/:categoryId' element={<Enchanted/>}/>
     </Routes>
     <Footer />
     </>
