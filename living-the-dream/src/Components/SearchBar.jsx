@@ -21,9 +21,10 @@ const handleChange = (e) => {
 
     return (
         <div className= "searchBar"> 
-        
-        <input type= "text" placeholder="Search Here" id='searchBar' onChange={handleChange} value={searchInput}></input>
-        <button onSubmit={handleSearch}>Search Here</button>
+
+        <h4>Type here</h4>
+        <input type= "text" placeholder="Search Here"></input>
+        {/* <input type= "text" placeholder="Search Here" onChange={handleChange} value={searchInput}></input> */}
 
         </div>
 
