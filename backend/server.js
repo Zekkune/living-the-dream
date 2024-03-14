@@ -3,7 +3,9 @@ const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const Listing = require('./models/listing');
 const Review = require('./models/review');
-const db = require('./db')
+const Category = require('./models/category')
+const db = require('./db');
+const category = require('./models/category');
 const app = express();
 
 
@@ -14,7 +16,14 @@ app.use(bodyParser.json());
 
 
 
-
+app.get('/categories', async (req, res) => {
+  try {
+    const categories = await category.find({})
+    res.json(categories)
+  } catch (error){
+    res.status(500).json({ error: error.message });
+  }
+})
 // Routes for listings
 
 // Get all listings
@@ -24,6 +33,16 @@ app.get('/listings', async (req, res) => {
     res.json(listings);
   } catch (error) {
     res.status(500).json({ error: error.message });
+  }
+});
+
+// Get listings by category id
+app.get('/listings/:categoryId', async (req, res) => {
+  try {
+    const listings = await Listing.find({category: req.params.categoryId});
+    res.json(listings);
+  } catch (error) {
+    res.status(404).json({ message: 'Listings not found' });
   }
 });
 
