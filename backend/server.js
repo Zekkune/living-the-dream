@@ -7,18 +7,20 @@ const Category = require('./models/category')
 const db = require('./db');
 const category = require('./models/category');
 const app = express();
+const cors = require('cors')
 
 
 const PORT = process.env.PORT || 3000;
 db.on('error', console.error.bind(console, 'MongoDB connection error:'));
 
 app.use(bodyParser.json());
+app.use(cors())
 
 
 
 app.get('/categories', async (req, res) => {
   try {
-    const categories = await category.find({})
+    const categories = await Category.find({})
     res.json(categories)
   } catch (error){
     res.status(500).json({ error: error.message });

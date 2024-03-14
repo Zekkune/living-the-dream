@@ -3,9 +3,6 @@ import { useState } from 'react'
 import SearchBar from './SearchBar'
 
 const Home = () => {
-const [apiResponse , setapiResponse] = useState()
-
-console.log(apiResponse)
 
   return (
     <div>

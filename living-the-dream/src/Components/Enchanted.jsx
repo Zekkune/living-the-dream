@@ -10,9 +10,9 @@ export default function Enchanted () {
     useEffect(()=> {
         const getListings= async ()=> {
             try {
-                const response= await axios.get(`${BASE_URL}/listings/:categoryId`)
+                const response = await axios.get(`http://localhost:3000/listings`)
                 console.log(response)
-                // setListings(response.data)
+                setListings(response.data)
             } catch (e) {
                 console.error("error fetching", e)
             }

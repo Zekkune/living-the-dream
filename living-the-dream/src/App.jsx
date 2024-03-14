@@ -32,7 +32,7 @@ import Enchanted from './Components/Enchanted'
       <Route path= '/TeamDream' element={<TeamDream />}/>
       <Route path= '/SurpriseMe' element={<SurpriseMe/>}/>
       <Route path= '/MostPopular' element={<MostPopular/>}/>
-      <Route path= '/listings/:categoryId' element={<Enchanted/>}/>
+      <Route path= '/listings' element={<Enchanted/>}/>
     </Routes>
     <Footer />
     </>
