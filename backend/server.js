@@ -1,21 +1,19 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
-const { Listing, Review } = require('./models');
-
+const Listing = require('./models/listing');
+const Review = require('./models/review');
+const db = require('./db')
 const app = express();
+
+
 const PORT = process.env.PORT || 3000;
+db.on('error', console.error.bind(console, 'MongoDB connection error:'));
 
 app.use(bodyParser.json());
 
 
-mongoose.connect('mongodb://127.0.0.1:27017/dreamDatabase', {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-});
 
-const db = mongoose.connection;
-db.on('error', console.error.bind(console, 'MongoDB connection error:'));
 
 // Routes for listings
 
