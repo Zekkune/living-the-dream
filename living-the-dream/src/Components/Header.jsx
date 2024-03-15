@@ -4,7 +4,7 @@ function Header () {
     
     return (
         <div className= 'Header'> 
-    <NavBar />
+         <NavBar />
 
         </div>
     )

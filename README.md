@@ -52,9 +52,10 @@ Here are some of the most popular castles.
 ### Source 
 
 * Chat GPT: Used to generate welcome message, list of castles and help read error code. 
-* React Doc
-* Vite 
+* https://github.com/Zekkune/taste-mate/tree/main
 * https://www.youtube.com/watch?v=CgkZ7MvWUAA
+* https://www.w3schools.com/css/css_display_visibility.asp
+
 
 ### Team Members 
 * Ameyo Kugbe 

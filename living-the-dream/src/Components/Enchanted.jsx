@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 import { BASE_URL } from "../global"
-import axios from "axios"
 import { useNavigate, useParams } from "react-router-dom"
+import axios from "axios"
 
 export default function Enchanted () {
   
@@ -23,7 +23,7 @@ export default function Enchanted () {
         console.log(listings)
     }, [categoryId])
     return (
-        <div>
+        <div className="enchanted">
             {listings.map((listing)=> {
                 return (
                     <div>
@@ -36,17 +36,4 @@ export default function Enchanted () {
                 
             })}
         </div>
-    //   <div>
-    //     <h3>Enchanted</h3>
-    //     {Object.keys(groupedListings).map((category, index) => (
-    //       <div key={index}>
-    //         <h4>{category}</h4>
-    //         <ul>
-    //           {groupedListings[category].map((listing, index) => (
-    //             <li key={index}></li>
-    //           ))}
-    //         </ul>
-    //       </div>
-    //     ))}
-    //   </div>
     )} 
