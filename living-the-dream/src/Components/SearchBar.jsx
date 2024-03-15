@@ -1,6 +1,9 @@
 import { useState } from "react"
+import { BASE_URL } from "../global"
 import axios from 'axios'
-import { BASE_URL } from "../global";
+
+
+
 export default function SearchBar (props) {
 const [searchInput, setSearchInput] = useState ("")
 const handleChange = (e) => {
